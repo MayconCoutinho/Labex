@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&display=swap');
+
+h4 {    
+    
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 40px;
+    text-decoration: none;
+    border-radius: 16px;
+    text-shadow: 0 0 8px hsl(0 0% 100%/0.3), 0 0 32px;
+    
+}
+   
+    
+    
