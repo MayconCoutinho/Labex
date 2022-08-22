@@ -24,7 +24,6 @@ const ApplicationFormPage = () => {
         "https://us-central1-labenu-apis.cloudfunctions.net/labeX/maycon/trips"
       )
       .then((response) => {
-        // console.log(response.data.trips);
         setTripsList(response.data.trips);
       })
       .catch((err) => {
@@ -55,9 +54,6 @@ const ApplicationFormPage = () => {
     alert("Formulario Enviado");
   };
 
-console.log(formValues.country);
-console.log(idViagem);
-
   return (
     <div>
     <Container>
@@ -87,7 +83,7 @@ console.log(idViagem);
               name="name"
               onChange={onChange}
               required
-              pattern="[a-zA-Z ]{3,15}"
+              pattern={"^.{3,}$"}
               title="name: mínimo 3 letras e menos de 15"
               value={formValues.name }
             ></input>

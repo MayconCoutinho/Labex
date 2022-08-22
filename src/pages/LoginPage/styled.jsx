@@ -61,13 +61,12 @@ export const Button = styled.div`
 
         border: none;
         margin-left: 1vw;
-        padding: 1.5vw;
-        border-radius: 40px;
+        padding: 10px;
+        border-radius: 10px;
         font-size: 14px;
-        width: 10vw;
-
+        margin-top: 20px;
+        width: 20vw;
         cursor: pointer;  
-        
     }
 
     button:hover{

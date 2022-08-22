@@ -57,10 +57,17 @@ button {
 
 border: none;
 margin-left: 1vw;
-padding: 1.5vw;
-border-radius: 40px;
+padding: 1vw;
+border-radius: 10px;
 font-size: 14px;
 width: 10vw;
+
+@media(max-width: 991px) {
+    
+    width: 25vw;
+    padding: 1.5vw;
+
+        }
 
 cursor: pointer;  
 
@@ -96,8 +103,8 @@ export const ContainerScroll = styled.div`
   justify-content: center;
   flex-direction: column;
 
-  width: 30vh;
-  height: 20vh;
+  width: 50vh;
+  height: 80vh;
 
   overflow-y: scroll;
   position: flex;
@@ -123,12 +130,11 @@ export const ListCandidatos = styled.div`
 
   h1 {
     display: grid;
-    grid-template-columns: 5vw 0;
-
-    padding: 1vh 15vh 1vh 1vh;
+    grid-template-columns: 1fr 1fr;
+  
+    padding: 1vh 1vh 1vh 1vh;
     font-size: 20px;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-      sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #a59400;
     white-space: nowrap;
     background-color: #ffffff;
@@ -145,8 +151,8 @@ export const ListCandidatos = styled.div`
   }
 
   button {
-    
-    padding: 1vh 3.5vw 1vh 1vh;
+    margin-left: 50px;
+    padding: 1vh 1vw 1vh 1vh;
     cursor: pointer;
   }
 

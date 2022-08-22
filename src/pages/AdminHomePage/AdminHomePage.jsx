@@ -13,6 +13,7 @@ const AdminHomePage = () => {
   
   const SairDaConta = () => {
    window.localStorage.removeItem('token')
+   goToHomePage(navigate)
 
   }
   return (

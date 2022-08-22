@@ -50,10 +50,17 @@ button {
 
 border: none;
 margin-left: 1vw;
-padding: 1.5vw;
-border-radius: 40px;
+padding: 1vw;
+border-radius: 10px;
 font-size: 14px;
 width: 10vw;
+
+@media(max-width: 991px) {
+    
+    width: 25vw;
+    padding: 1.5vw;
+
+        }
 
 cursor: pointer;  
 
@@ -61,8 +68,7 @@ cursor: pointer;
 
 button:hover{
 background-color: #09ff00ac;
-
-    color: #fff;
+color: #fff;
 
 }    
 `

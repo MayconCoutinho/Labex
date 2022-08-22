@@ -17,8 +17,6 @@ const TripDetailsPage = () => {
   const [canditadosAprovados, setCanditatosAprovados] = useState([])
 
   const GetTripDetail = (token, id) => {
-
-    // console.log('O id esta chegando em ChamarGetTripDetail', id)
       axios
       .get(
         `https://us-central1-labenu-apis.cloudfunctions.net/labeX/maycon/trip/${id}`,
@@ -58,11 +56,9 @@ const TripDetailsPage = () => {
   
   
 
-  // console.log("canditados", canditados)
-  // console.log("canditados Aprovados", canditadosAprovados)
+
 
   const Aprovar = (id) => {
-    console.log(id)
     DecideCandidate(idViagem.id, id)
   }
   

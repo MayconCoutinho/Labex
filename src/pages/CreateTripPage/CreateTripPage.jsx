@@ -20,7 +20,7 @@ const CreateTripPage = () => {
     return <option>{ planet }</option>
  })
 
-  const [formValues, setFormValues ] = useState({})
+  const [formValues, setFormValues ] = useState({ name: "", planet: "", date: "", description: "", durationInDays: "" })
 
 
   const onChange = (event) => {
@@ -40,8 +40,6 @@ const CreateTripPage = () => {
 
     alert("Formulario Enviado") 
 }
-
-console.log(formValues)
   
 
   return (<div>
@@ -66,7 +64,7 @@ console.log(formValues)
             name='name'
             onChange={onChange}
             required
-            pattern= '[a-zA-Z ]{5,15}'
+            pattern={"^.{5,}$"}
             title='name: mínimo 3 letras e menos de 15'
             value= {formValues.name || ''}
           ></input>
@@ -81,7 +79,7 @@ console.log(formValues)
           name='date'
           onChange={onChange}
           required
-          pattern= '[a-zA-Z ]{3,15}'
+          pattern={"^.{30,}$"}
           title='name: mínimo 3 letras e menos de 15'
           value= {formValues.date || ''}
         ></input>
