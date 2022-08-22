@@ -3,6 +3,6 @@
 ⏳ Projeto em andamento
 ⚙ BETA
 
-https://wonderful-roof.surge.sh/
+plausible-fog.surge.sh
 
 "email": "astrodev@gmail.com.br" "password": "123456"
