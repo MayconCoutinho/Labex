@@ -17,6 +17,7 @@ const LoginPage = () => {
 
   const onChangePassword = (event) => {
     setPassword(event.target.value);
+    
   };
 
   const onChangeEmail = (event) => {
@@ -27,7 +28,7 @@ const LoginPage = () => {
 
     event.preventDefault()
 
-    Login(email,password)
+    Login(email,password,navigate)
   }
 
   return ( <div> 
@@ -43,7 +44,6 @@ const LoginPage = () => {
             type={"email"}
             placeholder="E-mail"
             value={email}
-         
             onChange={onChangeEmail}
           ></input>
         </InputTexto>

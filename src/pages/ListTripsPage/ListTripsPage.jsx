@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import {Container,ContainerPreto,Titulo,ContaineTrips, CardTrips, CssButton} from './styled'
-import {goToHomePage, goToVoltar, goToApplicationFormPage} from '../../routes/coordinator';
+import {goToHomePage, goToTripDetailsPage, goToApplicationFormPage} from '../../routes/coordinator';
 import {GetTripsCompleto} from '../../hooks/Axios'
 import Footer from '../../components/Footer';
 const ListTripsPage = () => {
@@ -10,7 +10,6 @@ const ListTripsPage = () => {
   
   const viagem = GetTripsCompleto()
 
-  console.log(viagem)
   
 
   return (<div>
@@ -22,7 +21,7 @@ const ListTripsPage = () => {
             </Titulo>
             <CssButton>
             <button onClick={() => goToHomePage(navigate)}> HomePage </button>
-            <button onClick={() => goToVoltar(navigate)}> voltar </button>
+            <button onClick={() => goToTripDetailsPage(navigate)}> voltar </button>
             </CssButton>
 
             <ContaineTrips>

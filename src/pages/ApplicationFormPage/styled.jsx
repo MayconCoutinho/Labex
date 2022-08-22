@@ -22,10 +22,20 @@ button {
 
 border: none;
 margin-left: 1vw;
-padding: 1.5vw;
-border-radius: 40px;
+padding: 1vw;
+margin-bottom: 20px;
+margin-top: 10px;
+border-radius: 10px;
 font-size: medium;
 width: 10vw;
+
+@media(max-width: 991px) {
+    
+    width: 25vw;
+    padding: 1.5vw;
+
+
+        }
 
 cursor: pointer;  
 

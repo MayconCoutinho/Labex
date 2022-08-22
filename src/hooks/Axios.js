@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { goToEntra } from "../routes/coordinator";
 
 
 // funcionando lista de viagens disponiveis
@@ -56,7 +57,6 @@ export const ApplytoTrip = (body, id) => {
         `https://us-central1-labenu-apis.cloudfunctions.net/labeX/maycon/trips/${id}/apply`,body
       )
       .then((response) => {
-        console.log(response);
       })
       .catch((err) => {
         console.log(err);
@@ -67,15 +67,18 @@ export const ApplytoTrip = (body, id) => {
 // funcionando
 export const CreateTrip = (body) => {
 
-  const token = window.localStorage.getItem("token")
   axios
     .post(
       "https://us-central1-labenu-apis.cloudfunctions.net/labeX/maycon/trips",
-      body,{auth: token}
+      body,{
+        headers: {
+          auth: window.localStorage.getItem('token')
+        }
+      }
+
       )
 
     .then((response) => {
-      console.log(response);
     })
     .catch((err) => {
       console.log(err);
@@ -101,14 +104,13 @@ export const DeleteTrip = (id) => {
       }
     )
     .then((response) => {
-      console.log(response);
     })
     .catch((err) => {
       console.log(err);
     });
 };
 
-export const Login = (email, password) => {
+export const Login = (email, password, navigate) => {
 
   axios
     .post(
@@ -120,6 +122,8 @@ export const Login = (email, password) => {
     )
     .then((response) => {
       window.localStorage.setItem("token", response.data.token)
+      goToEntra(navigate)
+
     })
     .catch((err) => {
       alert("senha errada")
@@ -128,9 +132,6 @@ export const Login = (email, password) => {
 };
 
 export const DecideCandidate = (tripId,candidateId, boolean) => {
-
-
-  console.log('chegando para aprovar', tripId,candidateId, boolean)
 
   const body = {
       approve: boolean
@@ -143,7 +144,6 @@ export const DecideCandidate = (tripId,candidateId, boolean) => {
       })
     .then((response) => {
       alert('aprovado')
-      console.log(response)
     
     })
     .catch((err) => {

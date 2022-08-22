@@ -41,13 +41,21 @@ button {
 white-space: nowrap;
 border: none;
 margin-left: 1vw;
-padding: 1.5vw;
-border-radius: 40px;
+padding: 1vw;
+border-radius: 10px;
 font-size: 14px;
-width: 8vw 8vw 8vw 8vw;
+width: 10vw;
 
 cursor: pointer;  
 
+@media(max-width: 991px) {
+    
+    width: 25vw;
+    padding: 2vw;
+    font-size: 10px;
+
+
+        }
 }
 
 button:hover{
@@ -90,6 +98,14 @@ export const CardListViagens = styled.div`
   justify-content: center;
   flex-direction: column;
 
+  @media(max-width: 991px) {
+    
+    padding: 0;
+    
+
+  }
+
+
   h1 {
     display: grid;
     grid-template-columns: 11vw 0;
@@ -119,7 +135,7 @@ export const CardListViagens = styled.div`
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
       sans-serif;
     color: #000;
-
+    background-color: #86cf5b;
     white-space: nowrap;
     background-color: #ffffff;
     margin-top: 2vh;
@@ -132,6 +148,12 @@ export const CardListViagens = styled.div`
   button img {
 
     width: 1.5vw;
+
+    @media(max-width: 991px) {
+    
+      width: 4vw;
+
+  }
   }
 
   button {
@@ -139,20 +161,31 @@ export const CardListViagens = styled.div`
     background: none;
     margin-left: 12vw;
     cursor: pointer;
+    width: 2vw;
+    border-radius: 10%;
+
+    @media(max-width: 991px) {
+    
+    width: 4vw;
+    margin-left: 170px;
+
+
+}
   }
 
   button:hover {
-    background-color: #ee4141;
+    background-color: #ee41413e;
   }
 
   h2 > button {
-    
+
     background-color: #86cf5b;
   }
 
   h2 > button:hover {
 
-    background-color: #86cf5b;
+    background-color: #2d8100;
+    color: #ffffff;
   }
 
 `;

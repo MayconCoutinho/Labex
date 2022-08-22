@@ -49,13 +49,20 @@ export const Button = styled.div`
         display: grid;
         border: none;
         outline: none;
-        border-radius: 32px;
+        border-radius: 10px;
         font-size: 18px;
-        padding: 1vw;
+        padding: 15px;
         min-width: 25vw;
         min-height: 4vw;
         cursor: pointer;
 
+        @media(max-width: 991px) {
+    
+    img{
+        display: none;
+    
+    }
+        }
     }
 
 

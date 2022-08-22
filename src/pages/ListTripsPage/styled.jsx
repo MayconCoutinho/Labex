@@ -30,16 +30,27 @@ export const ContainerPreto = styled.div`
 
 export const CssButton = styled.div`
 
+
 button {
 
 border: none;
 margin-left: 1vw;
-padding: 1.5vw;
-border-radius: 40px;
+padding: 1vw;
+border-radius: 5px;
 font-size: 14px;
+
 width: 10vw;
+margin-bottom: 20px;
 
 cursor: pointer;  
+
+@media(max-width: 991px) {
+    
+    width: 25vw;
+    padding: 1.5vw;
+
+
+        }
 
 }
 
@@ -98,16 +109,17 @@ export const CardTrips = styled.div`
         background-color: #dbdbdb;
         
         h1{
-            background-color: #fff;
+            background-color: #ff00009b;
         }
         
     }
 
     h1{
 
-        font-family: 'Courier New', Courier, monospace;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 500;
         text-align: center;
-        color: #006bc2;
+        color: #000000;
         background-color: #dbdbdb65 ;
         padding: 5px;
         font-size: 15px;
