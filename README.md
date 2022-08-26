@@ -4,8 +4,6 @@
 <img width=800 src="https://user-images.githubusercontent.com/60453269/186984862-29b894a1-2445-4e19-8788-6529be3bded0.png">
 </h1>
 
-⏳ Projeto em andamento -> Falta uma boa documentação e corrigir alguns bugs
-
 ⚙ BETA
 
 ## 📲 User demo ➜ [Link Surge](https://plausible-fog.surge.sh/)
