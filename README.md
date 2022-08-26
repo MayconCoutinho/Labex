@@ -17,11 +17,17 @@
 
 https://user-images.githubusercontent.com/60453269/186005243-2af87fb6-ddbb-4479-afbe-32e81ea06920.mp4
 
-## ⚛️ Tecnologias utilizadas 
-- React Js
-- Styled Components 
-- Axios 
+## 🚀 Tecnologias
+Esse projeto foi desenvolvido com as seguintes tecnologias:
 
+HTML, CSS, Javascript
+React.js
+Styled Components
+
+## 💻 Projeto
+ A aplicação consiste em  visualizar viagens espaciais futuristas criadas pelo administrador. O usuário conseguir se candidatar a sua viagem escolhida, preenchendo os dados obrigatórios para se candidatar a viagem, após isso o administrador decidirá quem irá ou não na viagem aprovando os candidatos.
+ 
+ 
 ## 🖥️ Libs para instalar e visualizar o projeto 
 
 - Axios ➜ npm i axios
