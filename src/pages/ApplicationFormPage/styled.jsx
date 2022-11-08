@@ -1,9 +1,7 @@
 import styled from 'styled-components';
-import  imgApplicationFormPage from "../../assets/ApplicationFormPage.jpg";
-
+import  imgApplicationFormPage from "../../assets/ApplicationFormPage/ApplicationFormPage.jpg";
 
 export const Container = styled.div`
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,51 +13,35 @@ export const Container = styled.div`
     height: 100vh;
 `
 export const CssButton = styled.div`
-
-margin-top: 20px;
-
-button {
-
-border: none;
-margin-left: 1vw;
-padding: 1vw;
-margin-bottom: 20px;
-margin-top: 10px;
-border-radius: 10px;
-font-size: medium;
-width: 10vw;
-
-@media(max-width: 991px) {
-    
-    width: 25vw;
-    padding: 1.5vw;
-
-
+    margin-top: 20px;
+    button {
+        border: none;
+        margin-left: 1vw;
+        padding: 1vw;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        border-radius: 10px;
+        font-size: medium;
+        width: 10vw;
+        cursor: pointer;  
+        @media(max-width: 991px) {
+            width: 25vw;
+            padding: 1.5vw;
         }
-
-cursor: pointer;  
-
-}
-
-button:hover{
-background-color: #09ff00ac;
-
-    color: #fff;
-
-}    
+    }
+    button:hover{
+        background-color: #09ff00ac;
+        color: #fff;
+    }    
 `
-
 export const ContainerPreto = styled.div`
-
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
     background-color: #000000c0;;
     width: 200vh;
     height: 100vh;
-    
 `
 export const Titulo = styled.div`
     @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300&display=swap');
@@ -68,20 +50,14 @@ export const Titulo = styled.div`
     color: #ffffff;
     font-size: 12px;
     padding: 15px;
-    
 `
-
 export const InputTexto = styled.div`
-
     display: grid;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
-
     input {
         padding: 0 5%;
-        
         height: 6vh;
         border-radius: 10px;
         border: none;
@@ -89,16 +65,14 @@ export const InputTexto = styled.div`
         font-size: large;
         margin-top: 2vh; 
     }
-
     select {
-
-    padding: 0 5%;
-    min-width: 33vw;
-    height: 6vh;
-    border-radius: 10px;
-    border: none;
-    outline: none;
-    font-size: large;
-    margin-top: 2vh; 
+        padding: 0 5%;
+        min-width: 33vw;
+        height: 6vh;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        font-size: large;
+        margin-top: 2vh; 
     }
 `

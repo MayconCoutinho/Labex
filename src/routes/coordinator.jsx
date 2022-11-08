@@ -1,49 +1,24 @@
-// HomePage []
-
 export const goToListTripsPage = (navigate) => {
-    navigate("/ListTripsPage")
-  }
-
+  navigate("/ListTripsPage")
+}
 export const goToLoginPage = (navigate) => {
-    navigate("/LoginPage")
-  }
-
-// AdminHomePage 
-
+  navigate("/LoginPage")
+}
 export const goToTripDetailsPage = (navigate) => {
-    navigate("/TripDetailsPage")
-  }
-
-// LoginPage []
-
+  navigate("/TripDetailsPage")
+}
 export const goToEntra = (navigate) => {
-    navigate("/AdminHomePage")
-  }
-
+  navigate("/AdminHomePage")
+}
 export const goToCreateTripPage= (navigate) => {
-    navigate("/CreateTripPage")
-  }
- 
-// ListTripsPage 
-
+  navigate("/CreateTripPage")
+} 
 export const goToApplicationFormPage = (navigate) => {
-    navigate("/ApplicationFormPage")
-  }
-
-// Paginas que tem voltar e ir para home 
-
-// ApplicationFormPage // CreateTripPage // ErroPage 
-// ListTripsPage // LoginPage// TripDetailsPage
-
+  navigate("/ApplicationFormPage")
+}
 export const goToHomePage = (navigate) => {
-      navigate("/")
-    }
-  
+  navigate("/")
+}  
 export const goToVoltar = (navigate) => {
-      navigate(-1)
-    }
-
-
-
-
-
+  navigate(-1)
+}
