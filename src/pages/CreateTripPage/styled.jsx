@@ -1,11 +1,7 @@
 import styled from 'styled-components';
-import imgCreateTripPage from "../../assets/CreateTripPage.jpg";
-
+import imgCreateTripPage from "../../assets/CreateTripPage/CreateTripPage.jpg";
 
 export const Container = styled.div`
-
-
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,22 +11,15 @@ export const Container = styled.div`
     background-position: center;
     width: auto;
     height: 100vh;
-    
 `
-
 export const ContainerPreto = styled.div`
-
-
-
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
     background-color: #0000007a;
     width: 200vh;
     height: 100vh;
-    
 `
 export const Titulo = styled.div`
     @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300&display=swap');
@@ -39,48 +28,32 @@ export const Titulo = styled.div`
     color: #00ff0d;
     font-size: 12px;
     padding: 15px;
-    
 `
-
 export const CssButton = styled.div`
-
-margin-top: 20px;
-
-button {
-
-border: none;
-margin-left: 1vw;
-padding: 1vw;
-border-radius: 10px;
-font-size: 14px;
-width: 10vw;
-
-@media(max-width: 991px) {
-    
-    width: 25vw;
-    padding: 1.5vw;
-
+    margin-top: 20px;
+    button {
+        border: none;
+        margin-left: 1vw;
+        padding: 1vw;
+        border-radius: 10px;
+        font-size: 14px;
+        width: 10vw;
+        cursor: pointer; 
+        @media(max-width: 991px) {
+            width: 25vw;
+            padding: 1.5vw;
         }
-
-cursor: pointer;  
-
-}
-
-button:hover{
-background-color: #09ff00ac;
-color: #fff;
-
-}    
+    }
+    button:hover{
+        background-color: #09ff00ac;
+        color: #fff;
+    }    
 `
-
 export const InputTexto = styled.div`
-
     display: grid;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
-
     input {
         padding: 0 5%;
         min-width: 30vw;
@@ -89,22 +62,16 @@ export const InputTexto = styled.div`
         border: none;
         outline: none;
         font-size: large;
-        margin-top: 2vh;   
-        
+        margin-top: 2vh;      
     }
-
     select {
-    
-
-    padding: 0 5%;
-    min-width: 33vw;
-    height: 6vh;
-    border-radius: 10px;
-    border: none;
-    outline: none;
-    font-size: large;
-    margin-top: 2vh; 
-
-    
+        padding: 0 5%;
+        min-width: 33vw;
+        height: 6vh;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        font-size: large;
+        margin-top: 2vh; 
     }
 `

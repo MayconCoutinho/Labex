@@ -1,9 +1,7 @@
 import styled from 'styled-components';
-import imgListTripsPage from "../../assets/ListTripsPage.png";
-
+import imgListTripsPage from "../../assets/ListTripsPage/ListTripsPage.png";
 
 export const Container = styled.div`
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -14,9 +12,7 @@ export const Container = styled.div`
     width: auto;
     height: 100vh;
 `
-
 export const ContainerPreto = styled.div`
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,98 +20,60 @@ export const ContainerPreto = styled.div`
     background-color: #000000c0;
     width: 200vh;
     height: 100vh;
-    
 `
-
-
 export const CssButton = styled.div`
-
-
-button {
-
-border: none;
-margin-left: 1vw;
-padding: 1vw;
-border-radius: 5px;
-font-size: 14px;
-
-width: 10vw;
-margin-bottom: 20px;
-
-cursor: pointer;  
-
-@media(max-width: 991px) {
-    
-    width: 25vw;
-    padding: 1.5vw;
-
-
+    button {
+        border: none;
+        margin-left: 1vw;
+        padding: 1vw;
+        border-radius: 5px;
+        font-size: 14px;
+        width: 10vw;
+        margin-bottom: 20px;
+        cursor: pointer;  
+        @media(max-width: 991px) {
+            width: 25vw;
+            padding: 1.5vw;
         }
-
-}
-
-button:hover{
-background-color: #09ff00ac;
-
-    color: #fff;
-
-}    
+    }
+    button:hover{
+        background-color: #09ff00ac;
+        color: #fff;
+    }    
 `
-
-
 export const ContaineTrips = styled.div`
-
     display: grid;
-    
-
     margin: 2vw 2vw 2vw 2vw;
-
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
- 
     max-width: auto;
     max-height: auto;
-
-
-
     overflow-y: scroll;
     position: flex;
-
-
     ::-webkit-scrollbar{
-    width: 15px;
-    border: 1px solid #a6ff005c;
-    border-radius: 50px;
-  }
-  ::-webkit-scrollbar-thumb{
-    
-    background-color: #00ff2abb ;
-    border-radius: 10px;
-  }
-    
+        width: 15px;
+        border: 1px solid #a6ff005c;
+        border-radius: 50px;
+    }
+    ::-webkit-scrollbar-thumb{
+        background-color: #00ff2abb ;
+        border-radius: 10px;
+    }
 `
-
 export const CardTrips = styled.div`
-
     margin-top: 1vw;
     background-color: #fff;
     padding: 3.5vh;
     font-size: 17px;
     cursor: pointer;
-
     :hover {
         background-color: #dbdbdb;
-        
         h1{
             background-color: #ff00009b;
         }
-        
     }
-
     h1{
-
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-weight: 500;
         text-align: center;
@@ -125,26 +83,17 @@ export const CardTrips = styled.div`
         font-size: 15px;
         margin-top: 2vw;
         margin-bottom: 1vw ;
-
     }
-
-
     p{
         font-family: monospace;
         margin-top: 0.5vw;
     }
-
-    
 `
-
 export const Titulo = styled.div`
     @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&display=swap'); 
-
     font-family: 'Big Shoulders Display', cursive;
     margin: 8vh 0 15vh 0 ;
     color: #00ff2a;
     font-size: 12px;
     padding: 15px;
-    
-
 `

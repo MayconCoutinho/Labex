@@ -1,16 +1,14 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import {Container,ContainerPreto,Titulo,ContaineTrips, CardTrips, CssButton} from './styled'
-import {goToHomePage, goToTripDetailsPage, goToApplicationFormPage} from '../../routes/coordinator';
-import {GetTripsCompleto} from '../../hooks/Axios'
+import {goToHomePage, goToApplicationFormPage} from '../../routes/coordinator';
 import Footer from '../../components/Footer';
+import { useContext } from 'react'
+import {GlobalContext} from "../../global/context/useContext.jsx"
+
 const ListTripsPage = () => {
-
   const navigate = useNavigate()
-  
-  const viagem = GetTripsCompleto()
-
-  
+  const { trips } = useContext(GlobalContext)
 
   return (<div>
         <Container> 
@@ -21,12 +19,11 @@ const ListTripsPage = () => {
             </Titulo>
             <CssButton>
             <button onClick={() => goToHomePage(navigate)}> HomePage </button>
-            <button onClick={() => goToTripDetailsPage(navigate)}> voltar </button>
             </CssButton>
 
             <ContaineTrips>
             {
-              viagem.map((item) => {
+              trips && trips.map((item) => {
                 return <CardTrips onClick={() => goToApplicationFormPage(navigate)}>
                   <p>
                   Nome: {item.name}

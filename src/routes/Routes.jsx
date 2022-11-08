@@ -9,7 +9,6 @@ import TripDetailsPage from '../pages/TripDetailsPage/TripDetailsPage.jsx'
 import ErrorPage from "../pages/ErrorPage/ErrorPage.jsx";
 
 export const Router = () => {
-
     return(
         <BrowserRouter>
         <Routes>
@@ -23,6 +22,5 @@ export const Router = () => {
             <Route path= "*" element = {<ErrorPage/>} />
         </Routes>
       </BrowserRouter>
-
     )
 }

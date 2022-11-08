@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import "./index.css";
-import logo from "./img/logo.ico";
+import logo from "../../assets/Footer/logo.ico";
 
 export default class Footer extends Component {
-  render() {
+  render(){
     return (
       <footer>
         <img src={logo} alt=""></img>
