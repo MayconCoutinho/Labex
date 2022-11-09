@@ -12,31 +12,24 @@ const TripDetailsPage = () => {
   Token()
   const navigate = useNavigate()
 
-  const token = window.localStorage.getItem('token')
-
-  const { trips } = useContext(GlobalContext)
+  const { trips, token } = useContext(GlobalContext)
 
   const [canditados, setCanditatos] = useState([])
   const [canditadosAprovados, setCanditatosAprovados] = useState([])
   const [idViagem, setIdViagem] = useState("");
 
-
-
   const onChangeId = (event) => {
     const { name, value } = event.target;
     setIdViagem({ [name]: value });
-  };
-
+  }
   useEffect(() => {
     const result = GetTripDetail( token, idViagem.id )
     result.then((response) => {
       setCanditatos(response.trip.candidates)
       setCanditatosAprovados(response.trip.approved)
     })
-
   },[idViagem])
 
-  
   return (
       <div> 
         <Container> 

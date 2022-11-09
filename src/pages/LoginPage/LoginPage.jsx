@@ -7,20 +7,22 @@ import Footer from "../../components/Footer";
 import { Login } from "../../services/viagensApi";
 import {GlobalContext} from "../../global/context/useContext.jsx"
 import { useContext } from "react";
+ 
 
 const LoginPage = () => {
-  Token("login")
+  Token("login")  
+
+  const navigate = useNavigate()
   
-  const navigate = useNavigate();
   const { setToken } = useContext(GlobalContext)
 
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("")
+  const [password, setPassword] = useState("")
   const onChangePassword = (event) => {
-    setPassword(event.target.value);
+    setPassword(event.target.value)
   }
   const onChangeEmail = (event) => {
-    setEmail(event.target.value);
+    setEmail(event.target.value)
   }
   const FazerLogin = (event) => {
     event.preventDefault()
