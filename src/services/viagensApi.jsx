@@ -29,16 +29,17 @@ export const Login = async (email, password) => {
     alert(error.response.data.message)
   } 
 }
-export const CreateTrip = async (body) => {
+export const CreateTrip = async (body, token) => {
   try {
-    const response = await axios.post(`${BASE_URL}trips`,body,{
+      await axios.post(`${BASE_URL}trips`,body,{
       headers: {
-        auth: window.localStorage.getItem('token')
+        auth: token
       }
     })
-    return response.data
+    return true
   } catch(error){
     console.log(error.response)
+    return false
   } 
 }
 export const GetTripDetail = async (token, id) => {
@@ -59,9 +60,7 @@ export const DecideCandidate = async (tripId, candidateId, token) => {
       approve: true
     }
     const response = await axios.put(`${BASE_URL}trips/${tripId}/candidates/${candidateId}/decide`,body,{
-      headers: {
-        auth: token,
-      },
+      headers: {auth: token}
     })
     return response.data
   } catch(error){
@@ -70,13 +69,14 @@ export const DecideCandidate = async (tripId, candidateId, token) => {
 }
 export const DeleteTrip = async (id, token) => {
   try{
-    const response = await axios.delete(`${BASE_URL}trips/${id}`,{
+      await axios.delete(`${BASE_URL}trips/${id}`,{
       headers: {
         auth: token,
       },
     })
-    return response.data
+    return true
   } catch(error){
     console.log(error.response)
+    return false
   } 
 }

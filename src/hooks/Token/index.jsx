@@ -11,12 +11,12 @@ export const Token = (page) => {
   const { token } = useContext(GlobalContext)
 
   useEffect(() => {
-    if(token === null){
+    if(token === null || token === undefined){
       goToLoginPage(navigate)
     } else {
-      if(page === "login"){
+      if(page === "login" && token != null){
         goToEntra(navigate)
       }
     }
-  },[])
+  },[token])
 }

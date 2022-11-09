@@ -9,13 +9,12 @@ export const GlobalProvider = ({children}) => {
     const [trips, setTrips] = useState()
     const [token, setToken] = useState()
 
-    
     useEffect(() => {
         const result = GetTrips()
         result.then((response) => {setTrips(response.trips)})
     },[update])
 
     return (
-        <GlobalContext.Provider value={{ trips, setUpdate, token, setToken}}>{children}</GlobalContext.Provider>
+        <GlobalContext.Provider value={{ trips, setUpdate, update , token, setToken}}>{children}</GlobalContext.Provider>
     )
 } 
