@@ -1,43 +1,202 @@
-# Labex
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/60453269/234352264-c9560d32-b366-45aa-ac37-6f9da5679141.png" alt="Logo" width="200" height="200" />
+</p>
 
-<h1 align="center">
-<img width=500 src="https://user-images.githubusercontent.com/60453269/186984862-29b894a1-2445-4e19-8788-6529be3bded0.png">
-</h1>
 
-⚙ BETA
+<h1 align="center"> Labex </h1>
 
-## 📲 User demo ➜ [Link Surge](https://plausible-fog.surge.sh/)
+<a id="Sumário"></a>
 
-- Login: astrodev@gmail.com.br
-- Senha: 123456
 
-<h3 align="center">
-  🔊 Ative o Som Para Ter Uma Experiência Mais Agradável 😁  <br/>
-</h3> 
+<p align="center">
+  <b> Candidate a uma viagem espacial </b></br>
+  <sub> O canditato escolhe uma viagem prenche o formulario e o administrador analiza e aprova o candidato, projeto para fins de estudos e praticar conceitos.
+  <sub>
+    
+</p>
 
-https://user-images.githubusercontent.com/60453269/186005243-2af87fb6-ddbb-4479-afbe-32e81ea06920.mp4
 
-## 🚀 Tecnologias
-Esse projeto foi desenvolvido com as seguintes tecnologias:
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#table-of-contents)
 
-HTML, CSS, Javascript
-React.js
-Styled Components
-
-## 💻 Projeto
- A aplicação consiste em  visualizar viagens espaciais futuristas criadas pelo administrador. O usuário conseguir se candidatar a sua viagem escolhida, preenchendo os dados obrigatórios para se candidatar a viagem, após isso o administrador decidirá quem irá ou não na viagem aprovando os candidatos.
+<p align="center">
+  <a href="#Introdução"> 🧩 Introdução </a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#Resultados"> 🚀 Resultados</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#Dependências"> 🧪 Dependências</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#Ideias">💡 Possíveis Melhorias </a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#Creditos"> 🏆 Créditos </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
  
+<br/>
+
+
+
+<a id="Introdução"></a>
+## 🧩 Introdução 
+
+  ***⠀⠀⠀⠀Nesta aplicação, é possível visualizar viagens espaciais futuristas criadas pelo administrador. Os usuários podem se candidatar a uma viagem escolhida preenchendo os dados obrigatórios para participação, e em seguida, o administrador decidirá quem será selecionado para a aventura, aprovando os candidatos.***
+
+<br/>
+
+
+<a id="Resultados"></a>
+## 🚀 Resultados 
+  > Todos os resultados foram alcançados com sucesso. De modo geral são esses os resultados de cada requisição. 
+
+ <br/>
+  
+  
+ ### Login: astrodev@gmail.com.br
+ ### Senha: 123456
+  
+  
+<br/>
  
-## 🖥️ Libs para instalar e visualizar o projeto 
+  ### 🧑🏻 Area do usuario
+  
+ <br/>
 
-- Axios ➜ npm i axios
-- Styled Components ➜ npm i styled-components 
+| Home |
+|---|
+![image](https://user-images.githubusercontent.com/60453269/234352758-f04f79a5-872f-4593-8068-1cd7ca57d526.png)
 
-## 🧑‍💻 Desenvolvedores  
+
+| Viagens disponiveis |
+|---|
+![image](https://user-images.githubusercontent.com/60453269/234352827-544e3fb5-419f-4deb-a23b-47811492eb98.png)
+
+| Formularios |
+|---|
+![image](https://user-images.githubusercontent.com/60453269/234352888-f0f3282d-c692-478e-91f1-c124bf794720.png)
+
+
+<br/>
+ 
+  ### 🔐 Area do Admin
+  
+ <br/>
+
+| Login |
+|---|
+![image](https://user-images.githubusercontent.com/60453269/234353308-9fd7a9f3-0876-4556-8784-5dd0b9bcb654.png)
+
+| Administra viagens |
+|---|
+![image](https://user-images.githubusercontent.com/60453269/234353019-5d846a44-2ae8-4b9b-adb5-3c4e5fdf85a1.png)
+
+| Criar viagem |
+|---|
+![image](https://user-images.githubusercontent.com/60453269/234353135-1bc95031-28b6-4f75-b91d-5893ac14b468.png)
+  
+  
+| Aprovar candidato |
+|---|
+![image](https://user-images.githubusercontent.com/60453269/234353220-f73d7fa0-5134-4adc-915d-3b5f7126a2ad.png)
+
+  
+  
+<br /> 
+
+<a href="#Sumário"> 📖 Volta ao Sumário </a>
+
+<br /> 
+
+<a id="Dependências"></a>
+## 🧪 Dependências
+> Requisitos para rotar o codigo...
+
+<br/>
+
+## `📖 Instalação` 
+  
+  
+ <br /> 
+
+> Caso tenha Git basta da git clone, caso não tenha baixe o projeto completo em dowlon
+
+```BASH
+git clone https://github.com/MayconCoutinho/Labex
+```
+
+<br /> 
+
+> Caso já tenha o Node em sua maquina basta instalar o projeto com npm i
+
+```BASH
+npm i 
+```
+
+<br /> 
+
+## `📖 Scripts` 
+
+```JSON
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  }
+
+```
+
+<br/>
+
+## `📖 Dependencies` 
+
+```JSON
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^0.27.2",
+    "bootstrap": "^5.2.0-beta1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "5.0.1",
+    "styled-components": "^5.3.5",
+    "web-vitals": "^2.1.4"
+  }
+
+```
+
+<br/>
+
+<a href="#Sumário"> 📖 Volta ao Sumário </a>
+
+<br /> 
+
+<a id="Ideias"></a>
+## 💡 Possíveis Melhoras
+> Possíveis melhorias no código e no projeto, caso queira voltar e melhorá lo.
+
+<br /> 
+
+- [ ] ***- Na parte do administrado em aprovar candidato, melhor desiner*** 
+- [ ] ***- Melhorar a responsividade do site***
+- [ ] ***- *** 
+
+
+
+<br/>
+
+<a href="#Sumário"> 📖 Volta ao Sumário </a>
+
+<br /> 
+
+<a id="Creditos"></a>
+## 🏆 Créditos
+> Todo o projeto foi feito por...
+  
+<br /> 
+
 
 <div align="center"> 
 
-| [<img src="https://user-images.githubusercontent.com/60453269/184236315-92017e73-39ae-4e8e-8a4b-3e7033bc4eb4.jpg" width=150><br><sub> Maycon Coutinho </sub>](https://www.linkedin.com/in/maycon-coutinho/) | 
-|---|
-
+| [<img src="https://user-images.githubusercontent.com/60453269/217899761-dc2d4e4b-3336-419d-9076-79304290aa0a.png" width=300><br><sub> Maycon Coutinho </sub>](https://www.linkedin.com/in/maycon-coutinho/) | ***Hello 😃 Se você chegou até aqui, acredito que gostou do meu projeto, nesse caso temos algo em comum, sendo assim que tal conversamos um pouco? Meu chama no linkedin 😁*** | 
+|---|---|
+  
 </div> 
+
+<br /> 
+
